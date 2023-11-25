@@ -2,6 +2,10 @@
 
 Code style rules used in all my own projects
 
+# Installation
+
+    npm i --save-dev eslint-config-dafi
+
 # Usage
 
 There are 4 different config
