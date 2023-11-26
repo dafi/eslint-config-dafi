@@ -16,7 +16,7 @@
       "error",
       {
         "ignoreUrls": true,
-        "ignorePattern": "^import |^export \\{(.*?)\\}",
+        "ignorePattern": "^import |^export \\{(.*?)\\}|^\\s*console\\.(log|info|warn|error)",
         "code": 140
       }
     ],
@@ -100,6 +100,7 @@
       {
         "allow": [
           "log",
+          "info",
           "warn",
           "dir",
           "timeLog",
