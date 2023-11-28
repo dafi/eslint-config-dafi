@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dafi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint code style rules used in my own projects",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,8 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^8.54.0"
+  },
+  "dependencies": {
+    "eslint-plugin-jsdoc": "^46.9.0"
   }
 }
