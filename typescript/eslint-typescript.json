@@ -106,6 +106,7 @@
     "@typescript-eslint/no-array-constructor": [
       "error"
     ],
+    "@typescript-eslint/no-unnecessary-condition": "off",
     "@typescript-eslint/member-delimiter-style": [
       "error",
       {
@@ -175,6 +176,7 @@
     "@typescript-eslint/no-unused-expressions": "error",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-useless-constructor": "off",
     "@typescript-eslint/no-var-requires": "off",
     "object-curly-spacing": "off",
     "@typescript-eslint/object-curly-spacing": [
@@ -183,6 +185,7 @@
     ],
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
+    "@typescript-eslint/prefer-includes": "off",
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/quotes": [
       "error",

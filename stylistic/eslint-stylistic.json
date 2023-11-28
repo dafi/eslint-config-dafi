@@ -25,7 +25,6 @@
       "error",
       {
         "enforce": [
-          { "blankLine": "never", "prev": "field", "next": "field" },
           { "blankLine": "always", "prev": "method", "next": "*" },
           { "blankLine": "always", "prev": "field", "next": "method" }
         ]
