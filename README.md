@@ -17,19 +17,54 @@ You can use the following configurations
 - Typescript
 - ReactJS
 - Angular
+- Angular template (applyed to `*.html` files)
 
 Add `"extends": "dafi/*"` to your `.eslintrc`
 
-Including all configs
+Including all configs (be careful to include angular **OR** react not both)
 
     "extends" : [
       "eslint:recommended",
       "dafi/javascript",
       "dafi/stylistic",
       "dafi/typescript",
+      "dafi/typescript/promise",
       "dafi/angular",
       "dafi/reactjs"
     ],
+
+
+# Angular
+
+Angular requires some special setup.
+
+Add the following config to apply to `*.ts` files
+
+    "overrides": [
+        ...
+        {
+          "files": ["*.ts"],
+          },
+          "extends": [
+            "dafi/angular"
+          ]
+        }
+      ]
+
+
+Add the following config to apply to `*.html` templates files.
+
+Add this config to fix the error `ESLint: Parsing error: Unexpected token <` on IntelliJ
+
+    "overrides": [
+        ...
+        {
+          "files": ["*.html"],
+          "extends": [
+            "dafi/angular/template"
+          ]
+        }
+    ]
 
 # Deprecated rules
 
@@ -38,9 +73,3 @@ Including all configs
 In the future will migrate to [ESLint Stylistic](https://eslint.style/) but for now the rules are present in separated file and use ESLint
 
 Typescript formatting rules are present on `dafi/typescript` and in the future will migrate, too.
-
-# ESLint 7.32.0
-
-Old projects using 7.32.0 must use `dafi/stylistic7`, this is identical to `dafi/stylistic` but it doesn't contain the rule `lines-between-class-members` because is not compatible
-
-
