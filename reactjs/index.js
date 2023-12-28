@@ -18,7 +18,9 @@ module.exports = {
         "max-lines-per-function" : [
           "error",
           200
-        ]
+        ],
+        "unicorn/consistent-function-scoping": "off",
+        "unicorn/no-null": "off"
       }
     }
   ],

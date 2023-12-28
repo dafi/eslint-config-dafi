@@ -8,6 +8,8 @@ I don't know how you arrived here but probably you should ignore this configurat
 
     npm i --save-dev eslint-config-dafi
 
+    npm i --save-dev eslint-plugin-unicorn@latest
+
 # Add ESLint to a project
 
     npm init @eslint/config
