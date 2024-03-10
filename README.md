@@ -79,3 +79,7 @@ Add this config to fix the error `ESLint: Parsing error: Unexpected token <` on 
 In the future will migrate to [ESLint Stylistic](https://eslint.style/) but for now the rules are present in separated file and use ESLint
 
 Typescript formatting rules are present on `dafi/typescript` and in the future will migrate, too.
+
+# Publish on npmjs.com
+
+    npm publish

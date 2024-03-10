@@ -1,0 +1,13 @@
+export default {
+  rules: {
+    "import/no-deprecated": "warn",
+    "import/order": "error",
+    "import/extensions": [
+      "error",
+      "never"
+    ],
+    "import/no-cycle": "error",
+    "import/no-duplicates": "error",
+  }
+};
+

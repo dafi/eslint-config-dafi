@@ -4,7 +4,9 @@
   "description": "ESLint code style rules used in my own projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bump": "npm version patch --tag-version-prefix=\"\"",
+    "bump-dev": "npm --no-git-tag-version version patch"
   },
   "repository": {
     "type": "git",
@@ -22,10 +24,16 @@
   "author": "Davide Ficano",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^8.57.0"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^6.15.0",
-    "eslint-plugin-jsdoc": "^46.9.1"
+    "@eslint/js": "^8.57.0",
+    "@stylistic/eslint-plugin": "^1.6.3",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsdoc": "^48.2.1",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unicorn": "^51.0.1",
+    "typescript-eslint": "^7.1.1"
   }
 }
