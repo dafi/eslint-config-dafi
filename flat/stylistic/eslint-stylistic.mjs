@@ -15,7 +15,17 @@ export default {
     "@stylistic/eol-last": "error",
     "@stylistic/indent": [
       "error",
-      2
+      2,
+      {
+        "SwitchCase": 1,
+        // needed to align decorator's variable on new line
+        // https://stackoverflow.com/a/70697009/195893
+        ignoredNodes: [
+          'FunctionExpression > .params[decorators.length > 0]',
+          'FunctionExpression > .params > :matches(Decorator, :not(:first-child))',
+          'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key',
+        ],
+      },
     ],
     "@stylistic/linebreak-style": [
       "error",
