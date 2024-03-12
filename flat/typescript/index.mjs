@@ -3,6 +3,7 @@ import tsESLint from "typescript-eslint";
 import importESLint from "eslint-plugin-import";
 import customTypescript from "./eslint-typescript.mjs";
 import customTypescriptStylistic from "./eslint-typescript-stylistic.mjs";
+import stylistic from '@stylistic/eslint-plugin';
 
 export default tsESLint.config(
     eslint.configs.recommended,
@@ -24,6 +25,7 @@ export default tsESLint.config(
       },
       plugins: {
         'import': importESLint,
+        '@stylistic': stylistic,
       },
       rules: {
         ...customTypescript.rules,
