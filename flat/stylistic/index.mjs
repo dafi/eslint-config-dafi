@@ -3,6 +3,11 @@ import customStylistic from './eslint-stylistic.mjs';
 
 export default [
   {
+    files: [
+      '**/*.js',
+      '**/*.ts',
+      '**/*.tsx',
+    ],
     plugins: {
       '@stylistic': stylistic
     },

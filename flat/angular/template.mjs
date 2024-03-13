@@ -5,7 +5,7 @@ import customTemplate from './eslint-angular-template.mjs';
 
 export default [
   {
-    "files": ["**/*.html"],
+    files: ['**/*.html'],
     languageOptions: {
       parser: ngTemplateParser,
     },
