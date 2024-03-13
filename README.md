@@ -24,7 +24,7 @@ You can use the following configurations
 ### Installation
 
     npm i --save-dev eslint-config-dafi
-    npm i --savedev globals
+    npm i --save-dev globals
 
 ### JS/TS/React `eslint.config.js` example
 
