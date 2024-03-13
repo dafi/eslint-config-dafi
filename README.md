@@ -4,12 +4,6 @@ Code style rules used in all my own projects
 
 I don't know how you arrived here but probably you should ignore this configuration 😜
 
-# Installation
-
-    npm i --save-dev eslint-config-dafi
-
-    npm i --save-dev eslint-plugin-unicorn@latest
-
 # Add ESLint to a project
 
     npm init @eslint/config
@@ -23,7 +17,98 @@ You can use the following configurations
 - Typescript
 - ReactJS
 - Angular
-- Angular template (applyed to `*.html` files)
+- Angular template (applied to `*.html` files)
+
+# Flat config
+
+### Installation
+
+    npm i --save-dev eslint-config-dafi
+    npm i --savedev globals
+
+### JS/TS/React `eslint.config.js` example
+
+```javascript
+    import globals from "globals";
+    import customJS from 'eslint-config-dafi/flat/javascript/index.mjs';
+    import customTypescript from 'eslint-config-dafi/flat/typescript/index.mjs';
+    import customReact from 'eslint-config-dafi/flat/reactjs/index.mjs';
+    import customStylistic from 'eslint-config-dafi/flat/stylistic/index.mjs';
+    
+    /** @type {import('eslint').Linter.FlatConfig[]} */
+    export default [
+      ...customJS,
+      ...customTypescript,
+      ...customReact,
+      ...customStylistic,
+      {
+        ignores: ['eslint.config.js'],
+      },
+      {
+        languageOptions: {
+          globals: {
+            ...globals.browser,
+          },
+          parserOptions: {
+            project: [
+              "tsconfig.json"
+            ],
+            ecmaFeatures: {
+              jsx: true
+            },
+            ecmaVersion: 2018,
+            sourceType: "module"
+          },
+        },
+      },
+    ];
+```
+
+### Angular `eslint.config.js` example
+
+```javascript
+import globals from "globals";
+
+import customJS from 'eslint-config-dafi/flat/javascript/index.mjs';
+import customTypescript from 'eslint-config-dafi/flat/typescript/index.mjs';
+import customStylistic from 'eslint-config-dafi/flat/stylistic/index.mjs';
+
+import customPromise from 'eslint-config-dafi/flat/typescript/promise.mjs';
+import customAngular from 'eslint-config-dafi/flat/angular/index.mjs';
+import customAngularTemplate from 'eslint-config-dafi/flat/angular/template.mjs';
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+export default [
+  ...customJS,
+  ...customTypescript,
+  ...customStylistic,
+  ...customPromise,
+  ...customAngular,
+  ...customAngularTemplate,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+      },
+      parserOptions: {
+        project: [
+          "tsconfig.json",
+        ],
+        ecmaVersion: 2018,
+        sourceType: "module"
+      },
+    },
+  },
+];
+```
+
+# Legacy config
+
+### Installation
+
+    npm i --save-dev eslint-config-dafi
+
+    npm i --save-dev eslint-plugin-unicorn@latest
 
 Add `"extends": "dafi/*"` to your `.eslintrc`
 
