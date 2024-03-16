@@ -167,4 +167,10 @@ Typescript formatting rules are present on `dafi/typescript` and in the future w
 
 # Publish on npmjs.com
 
+### Tag new version
+
+    npm run bump
+
+### Publish
+
     npm publish
