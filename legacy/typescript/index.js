@@ -18,7 +18,8 @@ module.exports = {
       "extends" : [
         "plugin:@typescript-eslint/strict-type-checked",
         "plugin:@typescript-eslint/stylistic-type-checked",
-        "./eslint-typescript.json"
+        "./eslint-typescript.json",
+        "./eslint-typescript-stylistic.json"
       ]
     }
   ],

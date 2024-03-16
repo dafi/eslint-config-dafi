@@ -3,7 +3,8 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
-    "./eslint-react.json"
+    "./eslint-react.json",
+    "./eslint-react-stylistic.json"
   ],
   "plugins" : [
     "react",

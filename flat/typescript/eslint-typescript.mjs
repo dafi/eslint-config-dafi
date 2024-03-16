@@ -158,10 +158,18 @@ export default {
     "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-this-alias": "error",
     "no-redeclare": "off",
-    "@typescript-eslint/no-redeclare": ["error"],
-    "@typescript-eslint/no-implied-eval": ["error"],
-    "@typescript-eslint/no-extra-non-null-assertion": ["error"],
-    "@typescript-eslint/no-dupe-class-members": ["error"],
+    "@typescript-eslint/no-redeclare": [
+      "error"
+    ],
+    "@typescript-eslint/no-implied-eval": [
+      "error"
+    ],
+    "@typescript-eslint/no-extra-non-null-assertion": [
+      "error"
+    ],
+    "@typescript-eslint/no-dupe-class-members": [
+      "error"
+    ],
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "error",

@@ -1,19 +1,23 @@
-export default {
-  rules: {
-    "@stylistic/brace-style": [
+{
+  "rules": {
+    "brace-style": "off",
+    "@typescript-eslint/brace-style": [
       "error",
       "1tbs",
       {
         "allowSingleLine": true
       }
     ],
-    "@stylistic/comma-spacing": [
+    "comma-spacing": "off",
+    "@typescript-eslint/comma-spacing": [
       "error"
     ],
-    "@stylistic/func-call-spacing": [
+    "func-call-spacing": "off",
+    "@typescript-eslint/func-call-spacing": [
       "error"
     ],
-    "@stylistic/indent": [
+    "indent": "off",
+    "@typescript-eslint/indent": [
       "error",
       2,
       {
@@ -26,10 +30,11 @@ export default {
         "SwitchCase": 1
       }
     ],
-    "@stylistic/keyword-spacing": [
+    "keyword-spacing": "off",
+    "@typescript-eslint/keyword-spacing": [
       "error"
     ],
-    "@stylistic/member-delimiter-style": [
+    "@typescript-eslint/member-delimiter-style": [
       "error",
       {
         "multiline": {
@@ -42,32 +47,35 @@ export default {
         }
       }
     ],
-    "@stylistic/no-extra-parens": [
+    "no-extra-parens": "off",
+    "@typescript-eslint/no-extra-parens": [
       "error",
       "all",
       {
         "nestedBinaryExpressions": false
       }
     ],
-    "@stylistic/no-extra-semi": [
+    "no-extra-semi": "off",
+    "@typescript-eslint/no-extra-semi": [
       "error"
     ],
-    "@stylistic/object-curly-spacing": [
+    "object-curly-spacing": "off",
+    "@typescript-eslint/object-curly-spacing": [
       "error",
       "always"
     ],
-    "@stylistic/quotes": [
+    "@typescript-eslint/quotes": [
       "error",
       "single",
       {
         "allowTemplateLiterals": true
       }
     ],
-    "@stylistic/semi": [
+    "@typescript-eslint/semi": [
       "error",
       "always"
     ],
-    "@stylistic/space-infix-ops": "error",
-    "@stylistic/type-annotation-spacing": "error",
-  },
-};
+    "@typescript-eslint/space-infix-ops": "error",
+    "@typescript-eslint/type-annotation-spacing": "error"
+  }
+}

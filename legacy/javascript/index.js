@@ -4,6 +4,7 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:unicorn/all",
     "./eslint-jscode.json",
+    "./eslint-import.json",
     "./eslint-jsdoc.json",
     "./eslint-unicorn.json"
   ],

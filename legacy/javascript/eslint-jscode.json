@@ -40,13 +40,6 @@
       "undefined"
     ],
     "id-match": "error",
-    "import/no-deprecated": "warn",
-    "import/order": "error",
-    "import/extensions": [
-      "error",
-      "never"
-    ],
-    "import/no-cycle": "error",
     "max-classes-per-file": "off",
     "no-bitwise": "error",
     "no-caller": "error",
@@ -112,7 +105,6 @@
     "prefer-const": "error",
     "radix": "error",
     "use-isnan": "error",
-    "valid-typeof": "off",
-    "import/no-duplicates": "error"
+    "valid-typeof": "off"
   }
 }

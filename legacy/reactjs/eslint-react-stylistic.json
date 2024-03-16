@@ -1,0 +1,33 @@
+{
+  "rules": {
+    "jsx-quotes": "error",
+    "react/jsx-closing-bracket-location": "error",
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-curly-spacing": "error",
+    "react/jsx-first-prop-new-line": "error",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-newline": "off",
+    "react/jsx-max-props-per-line": [
+      "error",
+      {
+        "maximum": 3
+      }
+    ],
+    "react/jsx-one-expression-per-line": [
+      "error",
+      {
+        "allow": "single-child"
+      }
+    ],
+    "react/jsx-pascal-case": "error",
+    "react/jsx-sort-props": "off",
+    "react/jsx-tag-spacing": "error",
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "arrow": "ignore"
+      }
+    ]
+  }
+}
