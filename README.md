@@ -116,12 +116,12 @@ Including all configs (be careful to include angular **OR** react not both)
 
     "extends" : [
       "eslint:recommended",
-      "dafi/javascript",
-      "dafi/stylistic",
-      "dafi/typescript",
-      "dafi/typescript/promise",
-      "dafi/angular",
-      "dafi/reactjs"
+      "dafi/legacy/javascript",
+      "dafi/legacy/stylistic",
+      "dafi/legacy/typescript",
+      "dafi/legacy/typescript/promise",
+      "dafi/legacy/angular",
+      "dafi/legacy/reactjs"
     ],
 
 
@@ -137,7 +137,7 @@ Add the following config to apply to `*.ts` files
           "files": ["*.ts"],
           },
           "extends": [
-            "dafi/angular"
+            "dafi/legacy/angular"
           ]
         }
       ]
@@ -152,7 +152,7 @@ Add this config to fix the error `ESLint: Parsing error: Unexpected token <` on 
         {
           "files": ["*.html"],
           "extends": [
-            "dafi/angular/template"
+            "dafi/legacy/angular/template"
           ]
         }
     ]
