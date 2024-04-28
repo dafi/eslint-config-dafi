@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dafi",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "ESLint code style rules used in my own projects",
   "main": "index.js",
   "scripts": {
