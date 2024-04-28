@@ -119,6 +119,13 @@ export default {
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-includes": "off",
     "@typescript-eslint/prefer-namespace-keyword": "error",
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowBoolean": true,
+        "allowNumber": true
+      }
+    ],
     "@typescript-eslint/restrict-plus-operands": [
       "error"
     ],

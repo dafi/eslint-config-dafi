@@ -34,7 +34,7 @@
     "react/no-multi-comp": "error",
     "react/prefer-read-only-props": "error",
     "react/react-in-jsx-scope": "off",
-    "react/require-default-props": "error",
+    "react/require-default-props": "off",
     "react/self-closing-comp": "error",
     "react/sort-default-props": "off"
   }
