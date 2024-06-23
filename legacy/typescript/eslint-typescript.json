@@ -1,5 +1,6 @@
 {
   "rules": {
+    "consistent-return": "off",
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": [
       "error",

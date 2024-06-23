@@ -1,5 +1,7 @@
 export default {
   rules: {
+    // this is useful on JS code but on TS it's better to set noImplicitReturns in tsconfig.json
+    "consistent-return": "off",
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": [
       "error",
