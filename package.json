@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bump": "npm version patch --tag-version-prefix=\"\"",
-    "bump-dev": "npm --no-git-tag-version version patch"
+    "bump-dev": "npm --no-git-tag-version version patch",
+    "preinstall": "npx only-allow pnpm"
   },
   "repository": {
     "type": "git",
@@ -24,17 +25,17 @@
   "author": "Davide Ficano",
   "license": "MIT",
   "devDependencies": {
-    "@angular-eslint/eslint-plugin": "^17.3.0",
-    "@angular-eslint/eslint-plugin-template": "^17.3.0",
-    "@angular-eslint/template-parser": "^17.3.0",
-    "@stylistic/eslint-plugin": "^1.7.2",
-    "eslint": "^8.57.0",
+    "@angular-eslint/eslint-plugin": "^18.0.1",
+    "@angular-eslint/eslint-plugin-template": "^18.0.1",
+    "@angular-eslint/template-parser": "^18.0.1",
+    "@stylistic/eslint-plugin": "^2.2.2",
+    "eslint": "^8.5.7",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsdoc": "^48.2.3",
-    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-jsdoc": "^48.2.15",
+    "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-unicorn": "^52.0.0",
-    "typescript-eslint": "^7.7.1"
+    "eslint-plugin-unicorn": "^54.0.0",
+    "typescript-eslint": "^7.13.1"
   }
 }
