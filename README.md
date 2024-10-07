@@ -171,6 +171,15 @@ Typescript formatting rules are present on `dafi/typescript` and in the future w
 
     npm run bump
 
+or
+
+    pnpm bump
+
 ### Publish
 
     npm publish
+
+or
+
+    pnpm publish
+
