@@ -10,7 +10,7 @@ export default {
       }
     ],
     "@typescript-eslint/await-thenable": "error",
-    "@typescript-eslint/ban-types": [
+    "@typescript-eslint/no-restricted-types": [
       "error",
       {
         "types": {
@@ -164,7 +164,8 @@ export default {
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/non-nullable-type-assertion-style": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
-    "@typescript-eslint/no-throw-literal": "error",
+    "no-throw-literal": "off",
+    "@typescript-eslint/only-throw-error": "error",
     "@typescript-eslint/no-this-alias": "error",
     "no-redeclare": "off",
     "@typescript-eslint/no-redeclare": [
