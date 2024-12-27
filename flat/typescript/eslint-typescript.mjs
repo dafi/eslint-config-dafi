@@ -92,7 +92,7 @@ export default {
       }
     ],
     "@typescript-eslint/no-empty-function": "off",
-    "@typescript-eslint/no-empty-interface": "error",
+    "@typescript-eslint/no-empty-object-type": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-inferrable-types": [
@@ -116,7 +116,7 @@ export default {
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-useless-constructor": "off",
-    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-require-imports": "off",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-includes": "off",

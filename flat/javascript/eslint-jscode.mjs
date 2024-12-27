@@ -27,7 +27,7 @@ export default {
       "smart"
     ],
     "guard-for-in": "error",
-    "id-blacklist": [
+    "id-denylist": [
       "error",
       "any",
       "Number",
