@@ -183,3 +183,6 @@ or
 
     pnpm publish
 
+# ESLint Config Inspector
+
+    npx @eslint/config-inspector
